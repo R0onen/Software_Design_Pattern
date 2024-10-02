@@ -59,7 +59,7 @@ public class Driver implements Prototype<Driver> {
     }
 
     @Override
-    public Prototype.Driver clone() {
+    public Driver clone() {
         Driver clonedDriver = new Driver(name, carModel, carMake, age);
         clonedDriver.setExperience(experience);
         return clonedDriver;
