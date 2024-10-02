@@ -27,11 +27,6 @@ public class Driver implements Prototype<Driver> {
         this.age = age;
 
     }
-
-
-
-    // Допишите код
-    …
-
+    
 }
 

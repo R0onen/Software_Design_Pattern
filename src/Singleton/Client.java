@@ -9,7 +9,5 @@ public class Client {
         String driver = driverManager.findNearestDriver("Location A");
 
         passenger.assignTaxi(driver);
-
-        System.out.println(passenger.getTaxi());
     }
 }
