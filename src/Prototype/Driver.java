@@ -27,6 +27,42 @@ public class Driver implements Prototype<Driver> {
         this.age = age;
 
     }
-    
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+    public String getCarModel() {
+        return carModel;
+    }
+    public void setCarModel(String carModel) {
+        this.carModel = carModel;
+    }
+    public String getCarMake() {
+        return carMake;
+    }
+    public void setCarMake(String carMake) {
+        this.carMake = carMake;
+    }
+    public String getAge() {
+        return age;
+    }
+    public void setAge(String age) {
+        this.age = age;
+    }
+    public String getExperience() {
+        return experience;
+    }
+    public void setExperience(String experience) {
+        this.experience = experience;
+    }
+
+    @Override
+    public Prototype.Driver clone() {
+        Driver clonedDriver = new Driver(name, carModel, carMake, age);
+        clonedDriver.setExperience(experience);
+        return clonedDriver;
+    }
 }
 
