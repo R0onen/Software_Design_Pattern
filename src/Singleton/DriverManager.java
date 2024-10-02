@@ -1,3 +1,5 @@
+package Singleton;
+
 public class DriverManager {
     private static DriverManager instance;
     public DriverManager getInstance(){

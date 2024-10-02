@@ -1,3 +1,5 @@
+package Singleton;
+
 public class Passenger {
     private String taxi;
 
