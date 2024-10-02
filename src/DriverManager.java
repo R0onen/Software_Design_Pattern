@@ -1,8 +1,6 @@
-import java.sql.Driver;
-
 public class DriverManager {
     private static DriverManager instance;
-    public static method getInstance(){
+    public DriverManager getInstance(){
         if (instance  == null){
             instance = new DriverManager();
         }
