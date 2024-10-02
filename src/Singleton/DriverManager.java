@@ -4,7 +4,11 @@ public class DriverManager {
     private static DriverManager instance;
     public DriverManager getInstance(){
         if (instance  == null){
-            instance = new DriverManager();
+            synchronized (DriverManager.class) {
+                if (instance == null) {
+                    instance = new DriverManager();
+                }
+            }
         }
         return instance;
     }
