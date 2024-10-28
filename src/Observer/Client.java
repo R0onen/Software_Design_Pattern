@@ -1,7 +1,5 @@
 package Observer;
 
-import java.util.Observable;
-
 public class Client implements  Observer {
     private String name;
 
