@@ -9,6 +9,8 @@ public class Client {
         Command cancelOrder = new CancelOrderCommand(taxiOrder);
         Command changeDestination = new ChangeDestinationCommand(taxiOrder, "Times Square");
 
-        createOrder
+        createOrder.execute();
+        cancelOrder.execute();
+        changeDestination.execute();
     }
 }
